@@ -1,0 +1,200 @@
+<html>
+ <head>
+  <title>Explain with examples the remaining methods for srtings and array </title>
+ </head>
+ <body>
+  <h2>The charCodeAt():</h2> 
+  <p>method returns the Unicode of the character at the specified index in a string.</p>
+  Ex:<br>
+  <script>
+  var str = "HELLO WORLD";
+console.log( str.charCodeAt(0));
+</script>
+<h2>The fromCharCode();</h2><p> method converts Unicode values into characters.</p>
+Ex:<br>
+<script>
+var res = String.fromCharCode(65);
+console.log(res);
+</script>
+<h2>The includes()</h2><p> method determines whether a string contains the characters of a specified string.</p>
+Ex:<br>
+<script>
+var str = "Hello world, welcome to the universe.";
+console.log(str.includes("world"));
+</script>
+<h2>The localeCompare()</h2><p> method compares two strings in the current locale.</p>
+Ex:<br>
+<script>
+var str1 = "ab";
+var str2 = "cd";
+console.log( str1.localeCompare(str2));
+</script>
+<h2>The match() </h2><p>method searches a string for a match against a regular expression, and returns the matches, as an Array object.</p>
+Ex<br>
+<script>
+var str = "The rain in SPAIN stays mainly in the plain";
+console.log(str.match(/ain/g));
+</script>
+<h2>The repeat()</h2><p> method returns a new string with a specified number of copies of the string it was called on.</p>
+Ex:<br>
+<script>
+var str = "Hello world!";
+console.log(str.repeat(2));
+</script>
+<h2>The replace()</h2><p> method searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced.</p>
+Ex:<br>
+<script>
+var str = "Visit Microsoft!";
+console.log(str.replace("Microsoft", "W3Schools"));
+</script>
+<h2>The search()</h2><p> method searches a string for a specified value, and returns the position of the match.</p>
+Ex:<br>
+<script>
+var str = "Visit W3Schools!";
+console.log( str.search("W3Schools"));
+</script>
+<h2>The slice()</h2><p> method extracts parts of a string and returns the extracted parts in a new string.</p>
+Ex:<br>
+<script>
+var str = "Hello world!";
+console.log(  str.slice(0, 5));
+</script>
+<h2>The substr()</h2><p> method extracts parts of a string, beginning at the character at the specified position, and returns the specified number of characters.</p>
+Ex:<br>
+<script>
+var str = "Hello world!";
+console.log( str.substr(1, 4));
+</script>
+<h2>The substring()</h2><p> method extracts the characters from a string, between two specified indices, and returns the new sub string.</p>
+Ex:<br>
+<script>
+var str = "Hello world!";
+console.log( str.substring(1, 4));
+</script>
+<h2>The toLocaleLowerCase()</h2><p> method converts a string to lowercase letters, according to the host's current locale.</p>
+Ex:<br>
+<script>
+var str = "Hello World!";
+console.log( str.toLocaleLowerCase());
+</script>
+<h2>The toLocaleUpperCase()</h2><p> method converts a string to uppercase letters, according to the host's current locale.</p>
+EX:<br>
+<script>
+var str = "Hello World!";
+console.log(  str.toLocaleUpperCase());
+</script>
+<h2>The toString()</h2><p> method returns the value of a String object.</p>
+Ex:<br>
+<script>
+var str = "Hello World!";
+console.log( str.toString());
+</script>
+<h2>The trim()</h2><p> method removes whitespace from both sides of a string.</p>
+EX:<br>
+<script>
+var str = "       Hello World!        ";
+alert(str.trim());
+</script>
+<h2>The valueOf()</h2><p> method returns the primitive value of a String object.</p>
+Ex:<br>
+<script>
+var str = "Hello World!";
+console.log( str.valueOf());
+</script>
+<h2>The copyWithin()</h2><p> method copies array elements to another position in the array, overwriting the existing values.</p>
+Ex:<br>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log( fruits.copyWithin(2, 0));
+</script>
+<h2>The entries() </h2><p>method returns an Array Iterator object with key/value pairs.</p>
+Ex:<br>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x= fruits.entries();
+
+for (x of f) {
+  console.log(  x);
+}
+</script>
+<h2>The every() </h2><p>method checks if all elements in an array pass a test (provided as a function).</p>
+Ex:<br>
+<script>
+var ages = [32, 33, 16, 40];
+
+function checkAdult(age) {
+  return age >= 18;
+}
+function myFunction() {
+  console.log( ages.every(checkAdult));
+}
+</script>
+<h2>The fill()</h2><p> method fills the specified elements in an array with a static value.</p>
+Ex:<br>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log( fruits.fill("Kiwi"));
+</script>
+<h2>filter()</h2><p> method creates an array filled with all array elements that pass a test (provided as a function).</p>
+Ex:
+<script>
+var ages = [32, 33, 16, 40];
+
+function checkAdult(age) {
+  return age >= 18;
+}
+
+function myFunction() {
+  console.log( ages.filter(checkAdult));
+}
+</script>
+<h2> find()</h2><p> method returns the value of the first element in an array that pass a test (provided as a function).</p>
+Ex:<br>
+<script>
+var ages = [3, 10, 18, 20];
+
+function checkAdult(age) {
+  return age >= 18;
+}
+
+function myFunction() {
+console.log(  ages.find(checkAdult));
+}
+</script>
+<h2>forEach()</h2><p> method calls a function once for each element in an array, in order.</p>
+Ex:<br>
+<script>
+var fruits = ["apple", "orange", "cherry"];
+ fruits.forEach(myFunction);
+
+function myFunction(item, index) {
+ console.log( index + ":" + item + "<br>");
+}
+</script>
+<h2>Array.from() </h2><p>method returns an Array object from any object with a length property or an iterable object.</p>
+Ex:<br>
+<script>
+var myArr = Array.from("ABCDEFG");
+console.log(myArr);
+</script>
+<h2>includes()</h2><p> method determines whether an array contains a specified element.</p>
+Ex:<br>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(  fruits.includes("Mango"));
+</script>
+<h2>indexOf() </h2><p>method searches the array for the specified item, and returns its position.</p>
+Ex:<br>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log( fruits.indexOf("Apple"));
+</script>
+<h2>join() </h2><p>method returns the array as a string.
+
+The elements will be separated by a specified separator. The default separator is comma (,).</p>
+Ex:<BR>
+<script>
+console.log( fruits.join());
+</script>
+ </body>
+</html>
