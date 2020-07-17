@@ -1,0 +1,86 @@
+<html>
+ <head>
+  <title> Write the brief intro on available Data types in js </title>
+ </head>
+ <body>
+  <p>In JavaScript there are two different kinds of data: primitives, and objects. A primitive is simply a data type that is not an object, and has no methods.</p>
+<p>In JS, there are six primitive data types:</P>
+Boolean<br>
+Number<br>
+String<br>
+Null<br>
+Undefined<br>
+Symbol<br>
+</font size="4" color="blue">Boolean:</font>
+<p>A boolean represents only one of two values: true, or false. Think of a boolean as an on/off or a yes/no switch.</p>
+Ex:<br>
+<script>
+var boo1 = true;
+var boo2 = false;
+console.log(typeof(boo1));
+</script>
+<br>
+</font size="4" color="blue">Number:</font>
+<p>There is only one type of Number in JavaScript. Numbers can be written with or without a decimal point. A number can also be +Infinity, -Infinity, and NaN (not a number).</p>
+Ex:<br>
+<script>
+var num1 = 32;
+console.log(typeof(num1));
+</script><br>
+</font size="4" color="blue">String:</font>
+<p>Strings are used for storing text. Strings must be inside of either double or single quotes. In JS, Strings are immutable (they cannot be changed).</p>
+Ex:<br>
+<script>
+var str1 = 'hello, it is me';
+var str2 = "hello, it's me";
+console.log(typeof(str1));
+</script><br>
+</font size="4" color="blue">Null:</font>
+<p>Null has one value: null. It is explicitly nothing.</p>
+Ex:<br>
+<script>
+var nothing = null;
+console.log(typeof(nothing));
+</script><br>
+</font size="4" color="blue">Undefined:</font>
+<p>In JavaScript, a variable without a value, has the value undefined. The type is also undefined.</p>
+Ex:<br>
+<script>
+var testVar;
+console.log(typeof(testVar)); // undefined<br>
+</script><br>
+</font size="4" color="blue">Symbol:</font>
+<p>Symbols are new in ES6. A Symbol is an immutable primitive value that is unique. For the sake of brevity, that is the extent that this article will cover Symbols.</p>
+Ex:<br>
+<script>
+const mySymbol = Symbol('mySymbol');
+console.log(typeof(mySymbol));
+</script><br>
+<font size="5" color="violet">Objects</font>
+<p>Objects are not a primitive data Type.</p>
+<font size="4" color="blue">Objects</font>
+<p>An object is a collection of properties. These properties are stored in 
+key/value pairs. Properties can reference any type of data, including objects and/or primitive values.</p>
+Ex:<br>
+<script>
+var obj = {
+  key1: 'value',
+  key2: 'value',
+  key3: true,
+  key4: 32,
+  key5: {}
+}
+console.log(typeof(obj));
+</script>
+<br>
+<font size="4" color="blue">JavaScript Arrays:</font>
+JavaScript arrays are written with square brackets.
+Array items are separated by commas.
+The following code declares (creates) an array called cars, containing three items (car names):
+Example:<br>
+<script>
+var cars = ["Saab","Volvo","BMW"];
+console.log(typeof(cars));
+</script>
+ </body>
+</html>
