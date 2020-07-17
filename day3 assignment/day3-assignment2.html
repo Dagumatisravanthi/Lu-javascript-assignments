@@ -1,0 +1,15 @@
+<html>
+ <head>
+  <title>Write a program which will take OS name and version from the user seperated by a space.Then log the OS name and version on the console.</title>
+   </head>
+ <body>
+ <h2>Assignment2</h2>
+  <script>
+  let input=prompt(`enter os name and version`);
+  //splitting the input by space
+  let input_array=input.split(" ");
+  //accessing elements of array as index0 as os name and index1 as version 
+  console.log(`The OS name is ${input_array[0]} and version is ${input_array[1]}.`);
+  </script>
+ </body>
+</html>

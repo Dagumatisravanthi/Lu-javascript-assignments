@@ -1,0 +1,59 @@
+<html>
+ <head>
+  <title>Write a program to take marks as input from the user and grade him accordingly.Use conditional statements.Also the same code using switch or ternary</title>
+ </head>
+ <body>
+  <h2>Assignment3</h2>
+  <script >
+  const marks=prompt("Enter marks");
+  console.log("if else if code");
+//this is if else if code
+if(marks<=100 && marks>=80){
+    console.log("Marks are "+marks+" and grade is A");
+}
+else if(marks<=79 && marks>=50){
+    console.log("Marks are "+marks+" and grade is B");
+}
+else if(marks<=49 && marks>=30){
+	console.log("Marks are "+marks+" and grade is C");
+}
+else if(marks<=29 && marks>=20){
+	console.log("Marks are "+marks+" and grade is D");
+}
+else{
+	console.log("Marks are "+marks+" and grade is FAIL");
+}
+//This is switch code
+console.log("switch code");
+switch(true){
+	case (marks<=100 && marks>=80):
+		console.log("Marks are "+marks+" and grade is A");
+	    break;
+    case  (marks<=79 && marks>=50):
+		console.log("Marks are "+marks+" and grade is B");
+	    break;
+	
+	case (marks<=49 && marks>=30):
+		console.log("Marks are "+marks+" and grade is C");
+	    break;
+
+	case (marks<=29 && marks>=20):
+	    console.log("Marks are "+marks+" and grade is D");
+        break;
+
+    default:
+	    console.log("Marks are "+marks+" and grade is FAIL");
+	    
+}
+//this is ternary code
+console.log("ternary code");
+let result=(marks<=100 && marks>=80)?'Marks are '+marks+ ' and grade is A':
+           (marks<=79 && marks>=50)?'Marks are '+marks+ ' and grade is B':
+		   (marks<=49 && marks>=31)?'Marks are '+marks+ ' and grade is C':
+           (marks<=29 && marks>=20)?'Marks are '+marks+' and grade is D':
+           'Marks are '+marks+' and grade is FAIL';
+console.log(result);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+ <head>
+  <title> Take a number from a user and write a function which checks whether the number is even or odd.Assign the result to a variable in the console.  </title>
+ <h2>Assignment1</h2>
+ </head>
+ <body>
+ <script>
+  let findOddEven=function (num=0){
+  let ans=(num%2==0)?'even':'odd';
+  return ans;
+  }
+  let num=prompt("Enter the number");
+  let result=findOddEven(num);
+  console.log("The number entered is "+num+" and number is "+result+".");
+  </script>
+ </body>
+</html>
