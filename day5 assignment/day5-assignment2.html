@@ -1,0 +1,87 @@
+<html>
+ <head>
+  <title> Assignment2 </title>
+ </head>
+ <body>
+  <script>
+  class User
+  {
+    constructor(name,age,email){
+      this.name=name;
+	  this.age=age;
+	  this.email=email;
+	  this.lucoins=0;
+	  this.courses=[];
+     }
+  login(){
+    console.log(`${this.name} has logged in`);
+	  //return this;
+	  }
+  logout(){
+    console.log(`${this.name} has logged out`);
+	 // return this;
+	  }
+	 }
+ /*let user1=new User('sam',20,'s@gmail.com');
+ user1.login();*/
+class Moderator extends User
+   {
+   constructor(name,age,email,role){
+     super(name,age,email);
+	 this.role='role';
+	 this.lucoins=0;
+	 }
+   addCoins(user){
+    this.lucoins++;
+	console.log(`${this.name} has ${this.lucoins} coins`);
+	//return this;
+	 }
+   removeCoins(user){
+    this.lucoins--;
+	console.log(`${this.name} has ${this.lucoins} coins`);
+	 //return this;
+	 }
+   }
+   
+  /*let user1=new User('sam',20,'s@gmail.com');
+	 let user2=new User('ram',20,'r@gmail.com');
+ let mod=new Moderator('berlin',24,'b@gmail.com');
+ user1.login();
+ mod.addCoins(user1);
+ console.log(user1);*/
+class Admin extends Moderator
+{
+ addCourse(user,course){
+  user.courses.push(course);
+  console.log(user);
+  }
+ deleteCourse(user,course){
+ var index= user.courses.indexOf(course);
+  user.course.splice(index,1);
+  console.log(user);
+  }
+}
+let user1=new User('Dilip',25,'dilip@gmail.com');
+let user2=new User('sita',25,'sita@gmail.com');
+let mod=new Moderator('berlin',24,'b@gmail.com','moderator');
+let admin=new Admin('ak',24,'k@gmail.com');
+let users=[user1,user2,mod,admin];
+users.forEach(element=>{
+  ;
+  });
+  user1.login();
+  user1.logout();
+  mod.addCoins(user1);
+mod.addCoins(user1);
+  mod.removeCoins(user1);
+  console.log(users);
+admin.addCourse(user1,'js');
+admin.addCourse(user1,'python');
+admin.addCourse(user2,'ai');
+admin.addCourse(user2,'java');
+console.log(users);
+admin.deleteCourse(user1,'python');
+console.log(user1);
+  </script>
+ </body>
+</html>

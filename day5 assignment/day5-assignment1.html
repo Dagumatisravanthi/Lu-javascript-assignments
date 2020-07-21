@@ -1,0 +1,24 @@
+<html>
+ <head>
+  <title>Write a program which does the folowing things
+  1.Take a positive number from the user
+  2.Makes an array of numbers till the number given by user
+  3.Use higher order function to filter the odd numbers
+  4.generate and array of the cubes of the filtered numbers</title>
+   </head>
+ <body>
+  <script>
+  var num=Math.abs(Number(prompt("Enter positive number")));
+  console.log(num);
+  var arr=[];
+  for(var i=1;i<=num;i++){
+  arr.push(i);
+  }
+  console.log(arr);
+  var oddnum=arr.filter(el=>el%2!=0);
+  console.log(oddnum);
+  let oddcube=oddnum.map(el=>el**3);
+  console.log(oddcube);
+  </script>
+ </body>
+</html>
