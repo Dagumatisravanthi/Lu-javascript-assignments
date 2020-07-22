@@ -1,12 +1,12 @@
 <html>
  <head>
-  <title>day6 </title>
+  <title>Assignment3using the toggle method of claslistadd a dark mode feaure to the website</title>
+<link rel="stylesheet" type="text/css" href="day6assignment3.css"/>
   </head>
- <body >
- <link rel="stylesheet" href="day6assignment3.css">
- <h2 id="title"></h2>
+ <body>
+  <h2 id="title"></h2>
  <h4 id="time"></h4>
- <button id="dark">click here</button>
+ <button onclick="myFunction()">Toggle dark mode</button>
  <script>
  const name=prompt('Enter your name');
  title.innerText +=`${name} ,welcome to the page`;
@@ -19,11 +19,9 @@
   }
 setInterval(clock,1000);
 
-const dmode=document.getElementById('dark');
-dmode.onclick=function changeColor(){
-document.body.style.backgroundColor='violet';
-document.body.style.color='white';
-dmode.classlist.toggle('violet');
+function myFunction(){
+var element=document.body;
+element.classList.toggle("dark-mode");
 }
  </script>
  </body>
