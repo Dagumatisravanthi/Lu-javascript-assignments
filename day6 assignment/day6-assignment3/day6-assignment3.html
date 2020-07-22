@@ -1,0 +1,30 @@
+<html>
+ <head>
+  <title>day6 </title>
+  </head>
+ <body >
+ <link rel="stylesheet" href="day6assignment3.css">
+ <h2 id="title"></h2>
+ <h4 id="time"></h4>
+ <button id="dark">click here</button>
+ <script>
+ const name=prompt('Enter your name');
+ title.innerText +=`${name} ,welcome to the page`;
+  
+ const ctime=document.getElementById('time');
+ function clock(){
+  let date=new Date();
+  let time=date.toLocaleTimeString();
+  ctime.innerText=time;
+  }
+setInterval(clock,1000);
+
+const dmode=document.getElementById('dark');
+dmode.onclick=function changeColor(){
+document.body.style.backgroundColor='violet';
+document.body.style.color='white';
+dmode.classlist.toggle('violet');
+}
+ </script>
+ </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+ <head>
+  <title>Write a program thar will iterate over an array of colors and change the background of the page after 5 seconds</title>
+  </head>
+ <body onload="change()">
+ <h2>Assignment1 </h2>
+  <script>
+  var color=["pink","blue","brown","green","red","orange","violet"];
+  var i=0;
+  function change(){
+  document.body.bgColor=color[i];
+  i=(i+1)%color.length;
+  setTimeout(change,5000);
+}
+  </script>
+   </body>
+</html>
