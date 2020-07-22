@@ -1,6 +1,10 @@
-.violet{
-color:violet
+body{
+padding:25px;
+background-color:white;
+color:black;
+font-size:25px;
 }
-.bgyellow{
-background-color:yellow;
+.dark-mode{
+background-color:black;
+color:white;
 }
