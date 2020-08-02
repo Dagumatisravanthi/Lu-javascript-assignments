@@ -1,0 +1,29 @@
+*{
+ margin:0px;
+ padding:0px;
+}
+body{
+border:8px double purple;
+}
+.center{
+margin:0;
+position:absolute;
+top:30%;
+left:50%;
+}
+#heading{
+color:orange;
+text-align:center;
+}
+#text{
+font-size:25px;
+color:blue;
+font-style:italic;
+text-align:center;
+}
+#author{
+font-size:20px;
+color:green;
+font-style:italic;
+text-align:center;
+}
